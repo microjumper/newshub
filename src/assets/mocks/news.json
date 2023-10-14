@@ -1,0 +1,266 @@
+{
+    "status": "ok",
+    "totalResults": 36,
+    "articles": [
+    {
+    "source": {
+                "id": "cnn",
+                "name": "CNN"
+            },
+            "author": "Jessie Yeung, Kareem El Damanhoury, Eyad Kourdi, Niamh Kennedy, Sophie Jeong, Abeer Salman, Sophie Tanno",
+            "title": "Israel announces 6-hour window for Gazans fleeing south, as troops gather near border - CNN",
+            "description": "Israel’s military has announced a six-hour window for Palestinians to flee south along specified streets within Gaza, as tens of thousands leave their homes following a stark evacuation order ahead of a possible Israeli ground assault.",
+            "url": "https://www.cnn.com/2023/10/14/middleeast/gaza-israel-evacuation-saturday-intl-hnk/index.html",
+            "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/231013140748-03-gaza-evacuation-101323.jpg?c=16x9&q=w_800,c_fill",
+            "publishedAt": "2023-10-14T12:07:00Z",
+            "content": "Israels military has announced a six-hour window for Palestinians to flee south along specified streets within Gaza, as tens of thousands leave their homes following a stark evacuation order ahead of… [+9338 chars]"
+        },
+    {
+    "source": {
+                "id": "the-wall-street-journal",
+                "name": "The Wall Street Journal"
+            },
+            "author": "Eric Sylvers",
+            "title": "Latest Death Tolls in Gaza and Israel - The Wall Street Journal",
+            "description": "Gaza residents faced an evacuation order as Israel targeted Hamas militants in the enclave with airstrikes and raids.",
+            "url": "https://www.wsj.com/livecoverage/israel-hamas-war-gaza-conflict",
+            "urlToImage": "https://images.wsj.net/im-868706/social",
+            "publishedAt": "2023-10-14T12:04:00Z",
+            "content": "Casualties mounted in Gaza as Israels bombing campaign proceeded ahead of an expected ground invasion. Officials in Gaza said 2,215 people had been killed in the enclave since the start of the Israel… [+290 chars]"
+        },
+    {
+    "source": {
+                "id": "cnn",
+                "name": "CNN"
+            },
+            "author": "Helen Regan, Jerome Taylor",
+            "title": "New Zealand shifts right as voters punish ruling party - CNN",
+            "description": "New Zealand Prime Minister Chris Hipkins has conceded his Labour party lost Saturday’s election, as voters punished the government and took the country rightwards nine months after his predecessor Jacinda Ardern suddenly resigned.",
+            "url": "https://www.cnn.com/2023/10/13/asia/new-zealand-general-election-labour-national-intl-hnk/index.html",
+            "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/231013082523-01-new-zealand-election-2023.jpg?c=16x9&q=w_800,c_fill",
+            "publishedAt": "2023-10-14T11:10:00Z",
+            "content": "New Zealand Prime Minister Chris Hipkins has conceded his Labour party lost Saturdays election, as voters punished the government and took the country rightwards nine months after his predecessor Jac… [+5755 chars]"
+        },
+    {
+    "source": {
+                "id": "politico",
+                "name": "Politico"
+            },
+            "author": null,
+            "title": "RFK Jr. running for president as an independent is a relief for the Kennedys - POLITICO",
+            "description": "The stalwart Democratic family had been pressuring Kennedy for months to drop out.",
+            "url": "https://www.politico.com/news/2023/10/14/rfk-jr-s-independence-pivot-is-a-relief-for-the-kennedys-00121480",
+            "urlToImage": "https://static.politico.com/82/2d/9bec6271488d8121445c7ac51a1a/robert-f-kennedy-jr-77619.jpg",
+            "publishedAt": "2023-10-14T11:00:00Z",
+            "content": "Roberts presidential aspirations have roiled the Kennedy family. Ahead of his brothers announcement in April, Chris said in an interview with POLITICO there was robust intra-family dialogue about Rob… [+3405 chars]"
+        },
+    {
+    "source": {
+                "id": null,
+                "name": "Space.com"
+            },
+            "author": "Daisy Dobrijevic",
+            "title": "Annular solar eclipse will turn the sun into 'ring of fire' today. Here's what you need to know. - Space.com",
+            "description": "Today's the day for an annular solar eclipse!",
+            "url": "https://www.space.com/annular-solar-eclipse-2023-today",
+            "urlToImage": "https://cdn.mos.cms.futurecdn.net/Cm697yzU7UsUTEYJySutt6-1200-80.jpg",
+            "publishedAt": "2023-10-14T10:00:00Z",
+            "content": "Space is part of Future US Inc, an international media group and leading digital publisher. Visit our corporate site.\r\n©\r\nFuture US, Inc. Full 7th Floor, 130 West 42nd Street,\r\nNew York,\r\nNY 10036."
+        },
+    {
+    "source": {
+                "id": "usa-today",
+                "name": "USA Today"
+            },
+            "author": "Sara Chernikoff",
+            "title": "How much do UAW workers make? A look at hourly wages across US states - USA TODAY",
+            "description": "UAW workers are striking for better pay, among other benefits. Here's a look at how UAW hourly wages compare with other workers in striking states.",
+            "url": "https://www.usatoday.com/story/money/cars/2023/10/14/how-much-uaw-workers-earn-comparison/71159764007/",
+            "urlToImage": "https://www.usatoday.com/gcdn/authoring/authoring-images/2023/10/13/USAT/71168320007-gty-1719490817.jpg?crop=3997,2249,x0,y266&width=3200&height=1801&format=pjpg&auto=webp",
+            "publishedAt": "2023-10-14T09:15:03Z",
+            "content": "With no slowdown in sight, thousands of members of the United Auto Workers Union are entering their fifth week of striking against the Detroit Three automakers.  \r\nMost recently, 8,700 workers at For… [+4076 chars]"
+        },
+    {
+    "source": {
+                "id": null,
+                "name": "cleveland.com"
+            },
+            "author": "Terry Pluto, cleveland.com",
+            "title": "What can Browns learn from Baker Mayfield when it comes to Deshaun Watson? – Terry Pluto - cleveland.com",
+            "description": "Baker Mayfield's final season with the Browns was rocky and the team was partly to blame.",
+            "url": "https://www.cleveland.com/browns/2023/10/what-can-browns-learn-from-baker-mayfield-when-it-comes-to-deshaun-watson-terry-pluto.html",
+            "urlToImage": "https://www.cleveland.com/resizer/Ml5SrzKmYzB_aFcdiy38kjJ42g4=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/CDISPE4PYBBIRHTI3OS273T5DE.jpg",
+            "publishedAt": "2023-10-14T08:59:00Z",
+            "content": null
+        },
+    {
+    "source": {
+                "id": "cnn",
+                "name": "CNN"
+            },
+            "author": "Hilary Whiteman",
+            "title": "Australians vote No in referendum that promised change for First Nations people but couldn’t deliver - CNN",
+            "description": "With a two-letter word, Australians struck down the first attempt at constitutional change in 24 years, a move experts say will inflict lasting damage on First Nations people and suspend any hopes of modernizing the nation’s founding document.",
+            "url": "https://www.cnn.com/2023/10/14/australia/australia-referendum-results-intl-hnk/index.html",
+            "urlToImage": "https://media.cnn.com/api/v1/images/stellar/prod/231014022718-07-australia-referendum-102023.jpg?c=16x9&q=w_800,c_fill",
+            "publishedAt": "2023-10-14T08:45:00Z",
+            "content": "With a two-letter word, Australiansstruck down the first attempt at constitutional change in 24 years, a move experts say will inflict lasting damage on First Nations people and suspend any hopes of … [+6534 chars]"
+        },
+    {
+    "source": {
+                "id": null,
+                "name": "Fox Business"
+            },
+            "author": "Chelsea Torres",
+            "title": "Seniors get slight boost for 2024 Social Security checks - Fox Business",
+            "description": "The new 2024 Social Security COLA Announcement will give seniors a slight boost to their monthly benefit checks. Some seniors say, it's still not enough to survive on.",
+            "url": "https://www.foxbusiness.com/personal-finance/seniors-get-slight-boost-for-2024-social-security-checks",
+            "urlToImage": "https://a57.foxnews.com/static.foxbusiness.com/foxbusiness.com/content/uploads/2023/10/0/0/social-security-image.jpg?ve=1&tl=1",
+            "publishedAt": "2023-10-14T07:48:23Z",
+            "content": "As of Thursday morning, millions of seniors got a slight boost in their monthly social security checks. The Social Security Cost-of-living adjustment, or COLA, will give seniors a 3.2% increase in th… [+1996 chars]"
+        },
+    {
+    "source": {
+                "id": null,
+                "name": "Coloradoan"
+            },
+            "author": "Chris Abshire",
+            "title": "Colorado football vs. Stanford: Score, takeaways from CU's epic collapse - Coloradoan",
+            "description": "The Buffs jumped out to a 29-0 halftime lead and squandered it all, as Stanford completed a crazy comeback in a double-overtime win.",
+            "url": "https://www.coloradoan.com/story/sports/college/football/2023/10/14/colorado-football-vs-stanford-score-takeaways-buffaloes-collapse/71157622007/",
+            "urlToImage": "https://www.coloradoan.com/gcdn/authoring/authoring-images/2023/10/14/PFTC/71182979007-usatsi-21645228.jpg?crop=7793,4384,x0,y420&width=3200&height=1801&format=pjpg&auto=webp",
+            "publishedAt": "2023-10-14T07:08:27Z",
+            "content": "BOULDER - A Friday night party in Boulder turned into an epic Colorado collapse. \r\nStanford erased a 29-point halftime deficit, scoring on every possession after the half and hitting a game-tying fie… [+6899 chars]"
+        },
+    {
+    "source": {
+                "id": null,
+                "name": "Daily Beast"
+            },
+            "author": "Shannon Vavra",
+            "title": "Inside the Risky Mission to Rescue Hostages From Hamas - The Daily Beast",
+            "description": "“This could be resolved within a few days, or… it could take years.”",
+            "url": "https://www.thedailybeast.com/inside-the-mission-to-get-hostages-back-from-hamas",
+            "urlToImage": "https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_675,w_1200,x_0,y_0/dpr_2.0/c_limit,w_740/fl_lossy,q_auto/v1697237561/101423-hostages-hero_g3alps",
+            "publishedAt": "2023-10-14T07:01:22Z",
+            "content": "As the fate of dozens of civilians held hostage by Hamas gunmen hangs in the balance in the Gaza Strip, experts say the rescue operations that will be undertaken to save the captives will likely be j… [+18014 chars]"
+        },
+    {
+    "source": {
+                "id": null,
+                "name": "The Athletic"
+            },
+            "author": "Ari Wasserman, David Ubben and more",
+            "title": "Until Saturday Week 7 college football predictions: Oregon-Washington, USC-Notre Dame and more - The Athletic",
+            "description": "Ari Wasserman, David Ubben and Scott Docherman give their picks for the biggest games of Week 7 on the Until Saturday podcast.",
+            "url": "https://theathletic.com/4960411/2023/10/13/until-saturday-week-7-college-football-predictions/",
+            "urlToImage": "https://cdn.theathletic.com/app/uploads/2023/10/13132917/USATSI_21492628-1-scaled.jpg",
+            "publishedAt": "2023-10-14T06:41:33Z",
+            "content": "The Athletic has live coverage of Oregon vs. Washington in Week 7 college football action\r\nAri Wasserman, David Ubben and Scott Dochterman previewed the biggest games of Week 7 of the college footbal… [+9273 chars]"
+        },
+    {
+    "source": {
+                "id": null,
+                "name": "The Times of Israel"
+            },
+            "author": null,
+            "title": "Journalist killed, 6 others wounded by Israeli shelling at Lebanon border - The Times of Israel",
+            "description": "Reuters videographer Issam Abdallah dead; IDF says it is 'very sorry' for death but does not accept responsibility",
+            "url": "https://www.timesofisrael.com/journalist-killed-6-others-wounded-by-israeli-shelling-at-lebanon-border/",
+            "urlToImage": "https://static.timesofisrael.com/www/uploads/2023/10/33Y89PF-highres-1024x640.jpg",
+            "publishedAt": "2023-10-14T05:26:47Z",
+            "content": "ALMA Al-SHAAB, Lebanon An Israeli shell landed in a gathering of international journalists covering clashes on the border in south Lebanon on Friday, killing a Reuters videographer and injuring six o… [+3166 chars]"
+        },
+    {
+    "source": {
+                "id": null,
+                "name": "Suntimes.com"
+            },
+            "author": "Georgia Nicols",
+            "title": "Horoscope for Saturday, Oct. 14, 2023 - Chicago Sun-Times",
+            "description": null,
+            "url": "https://chicago.suntimes.com/2023/10/14/23913528/horoscopes-today-saturday-oct-14-2023",
+            "urlToImage": "https://cst.brightspotcdn.com/dims4/default/e371764/2147483647/strip/true/crop/870x497+0+67/resize/1461x834!/quality/90/?url=https%3A%2F%2Fcdn.vox-cdn.com%2Fthumbor%2Fg9CeAUxMX-IS4c6nJ68X7pYwJ40%3D%2F0x0%3A870x630%2F870x630%2Ffilters%3Afocal%28435x315%3A436x316%29%2Fcdn.vox-cdn.com%2Fuploads%2Fchorus_asset%2Ffile%2F24995907%2FGeorgia_mug.jpeg",
+            "publishedAt": "2023-10-14T05:07:15Z",
+            "content": "Moon Alert\r\nThere are no restrictions to shopping or important decisions. The solar eclipse peaks in Libra at 12:55 p.m. Chicago time.\r\nAries (March 21-April 19)\r\nThis is one of the best days of the … [+3652 chars]"
+        },
+    {
+    "source": {
+                "id": null,
+                "name": "KABC-TV"
+            },
+            "author": null,
+            "title": "California Gov. Gavin Newsom signs law to slowly raise health care workers' minimum wage to $25 per hour - KABC-TV",
+            "description": "Gov. Gavin Newsom signed a bill that would raise the minimum wage for health care workers to $25 an hour in the state of California over the next decade.",
+            "url": "https://abc7.com/25-dollar-minimum-wage-healthcare-workers-california-gavin-newsom/13910824/",
+            "urlToImage": "https://cdn.abcotvs.com/dip/images/13910876_101323-kgo-generic-hospital-img.jpg?w=1600",
+            "publishedAt": "2023-10-14T04:27:20Z",
+            "content": "SACRAMENTO -- California will raise the minimum wage for health care workers to $25 per hour over the next decade under a new law Democratic Gov. Gavin Newsom signed Friday.\r\nThe new law is the secon… [+2664 chars]"
+        },
+    {
+    "source": {
+                "id": null,
+                "name": "YouTube"
+            },
+            "author": null,
+            "title": "LA Knight vs. Solo Sikoa: SmackDown highlights, Oct. 13, 2023 - WWE",
+            "description": "“The Megastar” LA Knight takes on “The Enforcer of The Bloodline” Solo Sikoa in the main event of SmackDown. Catch WWE action on Peacock, WWE Network, FOX, U...",
+            "url": "https://www.youtube.com/watch?v=OtqNYBJzI4A",
+            "urlToImage": "https://i.ytimg.com/vi/OtqNYBJzI4A/maxresdefault.jpg",
+            "publishedAt": "2023-10-14T02:53:00Z",
+            "content": null
+        },
+    {
+    "source": {
+                "id": null,
+                "name": "SciTechDaily"
+            },
+            "author": null,
+            "title": "SpaceX Falcon Heavy Blast Off: NASA's Psyche Spacecraft on Its Way To Metal-Rich Asteroid - SciTechDaily",
+            "description": "NASA’s Psyche spacecraft is on its voyage to an asteroid of the same name, a metal-rich world that could tell us more about the formation of rocky planets. Psyche successfully launched at 10:19 a.m. EDT on Friday, October 13, aboard a SpaceX Falcon Heavy rock…",
+            "url": "https://scitechdaily.com/?p=317660",
+            "urlToImage": "https://scitechdaily.com/images/SpaceX-Falcon-Heavy-Rocket-Launches-With-Psyche-Spacecraft-Onboard-scaled.jpg",
+            "publishedAt": "2023-10-14T02:43:51Z",
+            "content": "ByNASAOctober 13, 2023\r\nNASAs Psyche spacecraft, atop a SpaceX Falcon Heavy rocket, lifts off from Kennedy Space Centers historic Launch Complex 39A in Florida at 10:19 a.m. EDT on Friday, October 13… [+11598 chars]"
+        },
+    {
+    "source": {
+                "id": null,
+                "name": "Variety"
+            },
+            "author": "Rebecca Rubin",
+            "title": "Taylor Swift Mania Reigns as ‘Eras Tour’ Opens at New York City’s Busiest Movie Theater: ‘I’m So Excited I’m Sweating’ - Variety",
+            "description": "Taylor Swift fans are turning out at the movies in force for opening night of \"Eras Tour.\"",
+            "url": "https://variety.com/2023/film/news/taylor-swift-eras-tour-movie-theater-opening-night-fans-1235755819/",
+            "urlToImage": "https://variety.com/wp-content/uploads/2023/10/swiftie.jpg?w=1000&h=563&crop=1",
+            "publishedAt": "2023-10-14T01:33:00Z",
+            "content": "Jennifer Gamez and Kellie Marsalli were strangers until a chance encounter at AMC Lincoln Square 13 on Friday night. As one ascended and the other descended the escalator at one of New York City’s bu… [+3862 chars]"
+        },
+    {
+    "source": {
+                "id": null,
+                "name": "BBC News"
+            },
+            "author": "https://www.facebook.com/bbcnews",
+            "title": "Trump-backed Jim Jordan chosen as Speaker nominee - BBC.com",
+            "description": "It is still unclear whether the Ohio congressman has enough support to win a majority in the House.",
+            "url": "https://www.bbc.com/news/world-us-canada-67097300",
+            "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/0C12/production/_131409030_2bc53f0bb7da6f6a7150f49198f26cf736ae50080_0_2678_20251000x756.jpg",
+            "publishedAt": "2023-10-14T01:31:27Z",
+            "content": "Media caption, Watch: Jim Jordan: Three things to know about the conservative firebrand\r\nConservative firebrand Jim Jordan has been chosen as Republican nominee to become Speaker of the House. \r\nThe … [+5108 chars]"
+        },
+    {
+    "source": {
+                "id": null,
+                "name": "Nintendo Life"
+            },
+            "author": "Liam Doolan",
+            "title": "Round Up: The Reviews Are In For Sonic Superstars - Nintendo Life",
+            "description": "Here's what the critics think",
+            "url": "https://www.nintendolife.com/news/2023/10/round-up-the-reviews-are-in-for-sonic-superstars",
+            "urlToImage": "https://images.nintendolife.com/b4382518944d3/1280x720.jpg",
+            "publishedAt": "2023-10-14T01:30:00Z",
+            "content": "Image: SEGA\r\nSonic Superstars launches next week and in case you missed it, we're still waiting on a Nintendo Switch review code.\r\nWhile we wait for the Nintendo Life review, we've put together this … [+1382 chars]"
+        }
+    ]
+}

@@ -1,0 +1,13 @@
+<p-card class="article" [header]="article.title" [subheader]="article.author">
+  <ng-template pTemplate="header">
+    <img class="cover" [ngSrc]="article.urlToImage" width="340" height="255" alt=""/>
+  </ng-template>
+
+  <p>
+    {{article.description}}
+  </p>
+
+  <ng-template pTemplate="footer">
+    <p style="color: rgba(0, 0, 0, 0.6);">{{article.publishedAt | date: 'fullDate'}}</p>
+  </ng-template>
+</p-card>

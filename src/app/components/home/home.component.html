@@ -1,8 +1,23 @@
 <div class="container">
-  <div class="searchbar">
-    <span class="p-input-icon-left">
-        <i class="pi pi-search"></i>
-        <input type="text" pInputText />
-    </span>
-  </div>
+  <h1>NewsHub</h1>
+
+  <p-dataView [value]="articles" layout="grid">
+    <ng-template pTemplate="header">
+      <form>
+        <div class="p-inputgroup">
+          <span class="p-inputgroup-addon"><i class="pi pi-search"></i></span>
+          <span class="p-float-label">
+            <input id="search" type="text" pInputText formControlName="search">
+            <label for="search">Search</label>
+          </span>
+        </div>
+      </form>
+    </ng-template>
+
+    <ng-template let-article pTemplate="gridItem">
+      <div class="col-12 sm:col-6 lg:col-4 xl:col-3  p-2">
+        <app-article [article]="article"></app-article>
+      </div>
+    </ng-template>
+  </p-dataView>
 </div>

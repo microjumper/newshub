@@ -1,6 +1,9 @@
 @import "primeng/resources/themes/md-light-indigo/theme.css";
 @import "primeng/resources/primeng.css";
+@import "primeflex/primeflex.css";
 @import "primeicons/primeicons.css";
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@500&display=swap');
 
 html, body {
   margin: 0;
@@ -10,4 +13,20 @@ html, body {
   height: 100%;
 
   font-family: 'Roboto', sans-serif;
+}
+
+.article {
+  .p-card .p-card-title {
+    font-family: 'Lora', serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .p-card-content, .p-card-footer {
+    padding: 0;
+  }
+
+  .p-component {
+    height: 100%;
+  }
 }

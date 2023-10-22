@@ -6,12 +6,12 @@ import { Observable, of, tap, throwError } from "rxjs";
 import { Article } from "../../types/article.type";
 import { PaginatedResponse } from "../../types/paginated.type";
 
-import * as ENDPOINTS from '../endpoints';
-
 @Injectable({
   providedIn: 'root'
 })
 export class NewsService {
+
+  private baseUrl: string = "https://newshubfunction.azurewebsites.net/api/articles";
 
   constructor(private httpClient: HttpClient) { }
 
@@ -19,7 +19,7 @@ export class NewsService {
     const offset = pageNumber - 1;
 
     if (limit > 0 && offset >= 0) {
-      return this.httpClient.get<PaginatedResponse>(ENDPOINTS.GET).pipe(
+      return this.httpClient.get<PaginatedResponse>(`${this.baseUrl}/get/${limit}/${offset}?code=TZQs8zImDcaRsAejKjXNT0PNJ1tt_sQx5UkHoPWgDh_gAzFun9dPfg==`).pipe(
         tap(response => this.processArticles(response.articles))
       )
     }
@@ -31,7 +31,7 @@ export class NewsService {
     const offset = pageNumber - 1;
 
     if (limit > 0 && offset >= 0) {
-      return this.httpClient.get<Article[]>(ENDPOINTS.SEARCH).pipe(
+      return this.httpClient.get<Article[]>(`${this.baseUrl}/search/${searchTerm}/${limit}/${offset}?code=9YO4B2X211Ior7d24zY0YwstR6bA7xeK0tzlO99YeW6UAzFuFi-OlA==`).pipe(
         tap(articles => this.processArticles(articles))
       )
     }

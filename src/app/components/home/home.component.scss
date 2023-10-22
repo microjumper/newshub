@@ -1,5 +1,17 @@
 .container {
-  margin: 8px;
+  margin: auto;
+  max-width: 1920px;
+
+  h1 {
+    font-family: 'Lora', serif;
+    font-size: 3.5rem;
+    font-weight: 400;
+
+    letter-spacing: 6px;
+
+    text-align: center;
+    text-transform: uppercase;
+  }
 
   .searchbar, .searchbar span, .searchbar span input {
     width: 100%;

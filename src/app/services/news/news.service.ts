@@ -5,6 +5,7 @@ import { Observable, of, tap, throwError } from "rxjs";
 
 import { Article } from "../../types/article.type";
 import { PaginatedResponse } from "../../types/paginated.type";
+import { environment } from "../../../environments/environment";
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +18,7 @@ export class NewsService {
     const offset = pageNumber - 1;
 
     if (limit > 0 && offset >= 0) {
-      return this.httpClient.get<PaginatedResponse>(`http://localhost:7071/api/articles/get/${limit}/${offset}`).pipe(
+      return this.httpClient.get<PaginatedResponse>(`${environment.getEndpoint}/${limit}/${offset}`).pipe(
         tap(response => this.processArticles(response.articles))
       )
     }
@@ -29,7 +30,7 @@ export class NewsService {
     const offset = pageNumber - 1;
 
     if (limit > 0 && offset >= 0) {
-      return this.httpClient.get<Article[]>(`http://localhost:7071/api/articles/search/${searchTerm}/${limit}/${offset}`).pipe(
+      return this.httpClient.get<Article[]>(`${environment.searchEndpoint}/${searchTerm}/${limit}/${offset}`).pipe(
         tap(articles => this.processArticles(articles))
       )
     }

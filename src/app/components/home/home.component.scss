@@ -17,3 +17,11 @@
     width: 100%;
   }
 }
+
+@media screen and (min-width: 1400px) {
+  .col-xl {
+    flex: 0 0 auto;
+    padding: 0.5rem;
+    width: 25%;
+  }
+}

@@ -1,8 +1,8 @@
-<div class="container p-2 sm:p-3 md:p-4 lg:p-6 xl:p-8">
+<div class="container p-2 sm:p-3 md:p-4 lg:p-6 xl:px-8 xl:py-6">
   <h1>NewsHub</h1>
 
-  <p-dataView [value]="articles" layout="grid" (onPage)="onPage($event)"
-              [rows]="12" [paginator]="true" [totalRecords]="1">
+  <p-dataView [value]="articles" layout="grid" (onPage)="onPage($event)" [lazy]="true"
+              [first]="first" [rows]="recordsPerPage" [paginator]="true" [totalRecords]="totalRecords">
     <ng-template pTemplate="header">
       <form>
         <div class="p-inputgroup">
@@ -16,7 +16,7 @@
     </ng-template>
 
     <ng-template let-article pTemplate="gridItem">
-      <div class="col-12 sm:col-6 lg:col-4 xl:col-3 p-2">
+      <div class="col-12 sm:col-6 lg:col-4 p-2 col-xl">
         <app-article [article]="article"></app-article>
       </div>
     </ng-template>

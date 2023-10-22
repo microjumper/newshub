@@ -4,11 +4,11 @@
   <p-dataView [value]="articles" layout="grid" (onPage)="onPage($event)" [lazy]="true"
               [first]="first" [rows]="recordsPerPage" [paginator]="true" [totalRecords]="totalRecords">
     <ng-template pTemplate="header">
-      <form>
+      <form [formGroup]="searchForm">
         <div class="p-inputgroup">
           <span class="p-inputgroup-addon"><i class="pi pi-search"></i></span>
           <span class="p-float-label">
-            <input id="search" type="text" pInputText formControlName="search">
+            <input id="search" type="text" pInputText formControlName="search" [pKeyFilter]="alphanumericWithSpace">
             <label for="search">Search</label>
           </span>
         </div>

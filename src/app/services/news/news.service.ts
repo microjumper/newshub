@@ -5,24 +5,27 @@ import { Observable, of, tap, throwError } from "rxjs";
 
 import { Article } from "../../types/article.type";
 import { PaginatedResponse } from "../../types/paginated.type";
-import { environment } from "../../../environments/environment.development";
 
 @Injectable({
   providedIn: 'root'
 })
 export class NewsService {
 
-  private readonly baseUrl: string = "https://newshubfunction.azurewebsites.net/api/articles";
+  private readonly baseUrl: string | undefined;
   private readonly getCode: string | undefined;
   private readonly searchCode: string | undefined;
+  private readonly getEndpoint: string | undefined;
+  private readonly searchEndpoint: string | undefined;
 
   constructor(private httpClient: HttpClient) {
     if(typeof process !== 'undefined' && process !== null) {
-      this.getCode = process.env['GET_CODE'];
-      this.searchCode = process.env['SEARCH_CODE'];
+      this.baseUrl = "https://newshubfunction.azurewebsites.net/api/articles";
+      this.getCode = `?code=${process.env['GET_CODE']}`;
+      this.searchCode = `?code=${process.env['SEARCH_CODE']}`;
     } else {
-      this.getCode = environment.GET_CODE;
-      this.searchCode = environment.SEARCH_CODE;
+      this.baseUrl = "http://localhost:7071/api/articles";
+      this.getCode = '';
+      this.searchCode = '';
     }
   }
 
@@ -30,7 +33,7 @@ export class NewsService {
     const offset = pageNumber - 1;
 
     if (limit > 0 && offset >= 0) {
-      return this.httpClient.get<PaginatedResponse>(`${this.baseUrl}/all/${limit}/${offset}?code=${this.getCode}`).pipe(
+      return this.httpClient.get<PaginatedResponse>(`${this.baseUrl}/all/${limit}/${offset}${this.getCode}`).pipe(
         tap(response => this.processArticles(response.articles))
       )
     }
@@ -42,7 +45,7 @@ export class NewsService {
     const offset = pageNumber - 1;
 
     if (limit > 0 && offset >= 0) {
-      return this.httpClient.get<PaginatedResponse>(`${this.baseUrl}/search/${searchTerm}/${limit}/${offset}?code=${this.searchCode}`).pipe(
+      return this.httpClient.get<PaginatedResponse>(`${this.baseUrl}/search/${searchTerm}/${limit}/${offset}${this.searchCode}`).pipe(
         tap(response => this.processArticles(response.articles))
       )
     }

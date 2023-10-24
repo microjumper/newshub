@@ -16,6 +16,7 @@ export class NewsService {
   private readonly searchCode: string | undefined;
 
   constructor(private httpClient: HttpClient) {
+    /*
     if(typeof process !== 'undefined' && process !== null) {
       this.baseUrl = "https://newshubfunction.azurewebsites.net/api/articles";
       this.getCode = `?code=${process.env['GET_CODE']}`;
@@ -25,6 +26,11 @@ export class NewsService {
       this.getCode = '';
       this.searchCode = '';
     }
+    */
+
+    this.baseUrl = "https://newshubfunction.azurewebsites.net/api/articles";
+    this.getCode = `?code=${process.env['GET_CODE']}`;
+    this.searchCode = `?code=${process.env['SEARCH_CODE']}`;
   }
 
   getPaginatedArticles(limit: number, pageNumber = 1): Observable<PaginatedResponse> {

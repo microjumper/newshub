@@ -19,6 +19,11 @@ jobs:
         with:
           submodules: true
           lfs: false
+      - name: 'Create env file'
+        run: |
+          touch .env
+          echo GET_CODE="${{ secrets.GET_CODE }}" >> .env
+          echo SEARCH_CODE="${{ secrets.SEARCH_CODE }}" >> .env
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1

@@ -5,6 +5,7 @@ import { Observable, of, tap, throwError } from "rxjs";
 
 import { Article } from "../../types/article.type";
 import { PaginatedResponse } from "../../types/paginated.type";
+import { environment } from "../../../environments/environment.development";
 
 @Injectable({
   providedIn: 'root'
@@ -12,16 +13,24 @@ import { PaginatedResponse } from "../../types/paginated.type";
 export class NewsService {
 
   private readonly baseUrl: string = "https://newshubfunction.azurewebsites.net/api/articles";
-  private readonly getCode = process.env['GET_CODE'];
-  private readonly searchCode = process.env['SEARCH_CODE'];
+  private readonly getCode: string | undefined;
+  private readonly searchCode: string | undefined;
 
-  constructor(private httpClient: HttpClient) { }
+  constructor(private httpClient: HttpClient) {
+    if(typeof process !== 'undefined' && process !== null) {
+      this.getCode = process.env['GET_CODE'];
+      this.searchCode = process.env['SEARCH_CODE'];
+    } else {
+      this.getCode = environment.GET_CODE;
+      this.searchCode = environment.SEARCH_CODE;
+    }
+  }
 
   getPaginatedArticles(limit: number, pageNumber = 1): Observable<PaginatedResponse> {
     const offset = pageNumber - 1;
 
     if (limit > 0 && offset >= 0) {
-      return this.httpClient.get<PaginatedResponse>(`${this.baseUrl}/get/${limit}/${offset}?code=${this.getCode}`).pipe(
+      return this.httpClient.get<PaginatedResponse>(`${this.baseUrl}/all/${limit}/${offset}?code=${this.getCode}`).pipe(
         tap(response => this.processArticles(response.articles))
       )
     }
@@ -29,16 +38,16 @@ export class NewsService {
     return throwError(() => new Error(`Invalid arguments: ${limit}, ${offset}`));
   }
 
-  search(searchTerm: string, limit: number, pageNumber = 1): Observable<Article[]> {
+  search(searchTerm: string, limit: number, pageNumber = 1): Observable<PaginatedResponse> {
     const offset = pageNumber - 1;
 
     if (limit > 0 && offset >= 0) {
-      return this.httpClient.get<Article[]>(`${this.baseUrl}/search/${searchTerm}/${limit}/${offset}?code=${this.searchCode}`).pipe(
-        tap(articles => this.processArticles(articles))
+      return this.httpClient.get<PaginatedResponse>(`${this.baseUrl}/search/${searchTerm}/${limit}/${offset}?code=${this.searchCode}`).pipe(
+        tap(response => this.processArticles(response.articles))
       )
     }
 
-    return of([]);
+    return of({ totalRecords: 0, articles: [] });
   }
 
   private processArticles(articles: Article[]): Article[] {

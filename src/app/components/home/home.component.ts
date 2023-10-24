@@ -67,19 +67,23 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   private getAll(pageNumber = 1): void {
-    this.newsService.getPaginatedArticles(this.recordsPerPage, pageNumber).subscribe(
-      response => {
-        this.totalRecords = +response.totalRecords;
+    this.newsService.getPaginatedArticles(this.recordsPerPage, pageNumber).subscribe({
+      next: (response) => {
+        this.totalRecords = response.totalRecords;
         this.articles = response.articles;
+      },
+        error: () => {
+        this.articles = [];
+        this.totalRecords = 0;
       }
-    );
+    });
   }
 
   private search(searchTerm: string, pageNumber = 1): void {
     this.newsService.search(searchTerm, this.recordsPerPage, pageNumber).subscribe({
-      next: (articles) => {
-        this.articles = articles;
-        this.totalRecords = articles.length;
+      next: (response) => {
+        this.totalRecords = response.totalRecords;
+        this.articles = response.articles;
       },
       error: () => {
         this.articles = [];

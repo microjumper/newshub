@@ -14,8 +14,6 @@ export class NewsService {
   private readonly baseUrl: string | undefined;
   private readonly getCode: string | undefined;
   private readonly searchCode: string | undefined;
-  private readonly getEndpoint: string | undefined;
-  private readonly searchEndpoint: string | undefined;
 
   constructor(private httpClient: HttpClient) {
     if(typeof process !== 'undefined' && process !== null) {

@@ -11,7 +11,9 @@ import { PaginatedResponse } from "../../types/paginated.type";
 })
 export class NewsService {
 
-  private baseUrl: string = "https://newshubfunction.azurewebsites.net/api/articles";
+  private readonly baseUrl: string = "https://newshubfunction.azurewebsites.net/api/articles";
+  private readonly getCode = process.env['GET_CODE'];
+  private readonly searchCode = process.env['SEARCH_CODE'];
 
   constructor(private httpClient: HttpClient) { }
 
@@ -19,7 +21,7 @@ export class NewsService {
     const offset = pageNumber - 1;
 
     if (limit > 0 && offset >= 0) {
-      return this.httpClient.get<PaginatedResponse>(`${this.baseUrl}/get/${limit}/${offset}?code=TZQs8zImDcaRsAejKjXNT0PNJ1tt_sQx5UkHoPWgDh_gAzFun9dPfg==`).pipe(
+      return this.httpClient.get<PaginatedResponse>(`${this.baseUrl}/get/${limit}/${offset}?code=${this.getCode}`).pipe(
         tap(response => this.processArticles(response.articles))
       )
     }
@@ -31,7 +33,7 @@ export class NewsService {
     const offset = pageNumber - 1;
 
     if (limit > 0 && offset >= 0) {
-      return this.httpClient.get<Article[]>(`${this.baseUrl}/search/${searchTerm}/${limit}/${offset}?code=9YO4B2X211Ior7d24zY0YwstR6bA7xeK0tzlO99YeW6UAzFuFi-OlA==`).pipe(
+      return this.httpClient.get<Article[]>(`${this.baseUrl}/search/${searchTerm}/${limit}/${offset}?code=${this.searchCode}`).pipe(
         tap(articles => this.processArticles(articles))
       )
     }

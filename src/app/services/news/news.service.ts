@@ -16,21 +16,15 @@ export class NewsService {
   private readonly searchCode: string | undefined;
 
   constructor(private httpClient: HttpClient) {
-    /*
-    if(typeof process !== 'undefined' && process !== null) {
-      this.baseUrl = "https://newshubfunction.azurewebsites.net/api/articles";
-      this.getCode = `?code=${process.env['GET_CODE']}`;
-      this.searchCode = `?code=${process.env['SEARCH_CODE']}`;
-    } else {
+    if (window.location.hostname === "localhost") {
       this.baseUrl = "http://localhost:7071/api/articles";
       this.getCode = '';
       this.searchCode = '';
+    } else {  // process is not available in browser
+      this.baseUrl = "https://newshubfunction.azurewebsites.net/api/articles";
+      this.getCode = `?code=${process.env['GET_CODE']}`;
+      this.searchCode = `?code=${process.env['SEARCH_CODE']}`;
     }
-    */
-
-    this.baseUrl = "https://newshubfunction.azurewebsites.net/api/articles";
-    this.getCode = `?code=${process.env['GET_CODE']}`;
-    this.searchCode = `?code=${process.env['SEARCH_CODE']}`;
   }
 
   getPaginatedArticles(limit: number, pageNumber = 1): Observable<PaginatedResponse> {

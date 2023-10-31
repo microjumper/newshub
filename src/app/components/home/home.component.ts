@@ -55,7 +55,7 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   private loadData(pageNumber = 1): void {
-    const searchTerm = this.searchForm.get('search')?.value;
+    const searchTerm = this.searchForm.get('search')?.value.replace(/\s+/g, ' ').trim();
 
     if(searchTerm.length >= 3) {
       this.search(searchTerm, pageNumber);

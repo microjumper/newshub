@@ -43,7 +43,7 @@ export class NewsService {
     const offset = pageNumber - 1;
 
     if (limit > 0 && offset >= 0) {
-      return this.httpClient.get<PaginatedResponse>(`${this.baseUrl}/search/${searchTerm}/${limit}/${offset}${this.searchCode}`).pipe(
+      return this.httpClient.get<PaginatedResponse>(`${this.baseUrl}/search/${encodeURI(searchTerm)}/${limit}/${offset}${this.searchCode}`).pipe(
         tap(response => this.processArticles(response.articles))
       )
     }
